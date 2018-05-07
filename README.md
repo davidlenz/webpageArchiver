@@ -12,7 +12,7 @@ Exclude URLs from getting archived by putting a `#` at the beginning.
 - python-selenium
 - Chromium + Chromedriver (should work with Firefox too after modifications)
 
-#### todo:
+#### Todo:
 - automatically skip already archived webpages / automatically comment archived urls
 - parameter to choose browser used to render webpages
 - automatically close "we use cookies"-banner (sometimes overlapping contents)

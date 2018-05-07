@@ -1,3 +1,4 @@
 https://www.heise.de/security/meldung/Spectre-NG-Intel-Prozessoren-von-neuen-hochriskanten-Sicherheitsluecken-betroffen-4039302.html
 https://www.heise.de/newsticker/meldung/Nach-Haftstrafe-fuer-Kopien-von-Recovery-CDs-Massive-Kritik-an-Microsoft-haelt-an-4038399.html
+#https://this.url/will/be/ignored/
 https://www.heise.de/make/meldung/Winziges-Board-mit-WLAN-Modul-4039951.html

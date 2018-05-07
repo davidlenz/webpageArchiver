@@ -8,7 +8,7 @@
     python-selenium
 
 """ 
-import time
+import time, os
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
@@ -40,7 +40,9 @@ for i,line in enumerate(content):
         keepcharacters = (' ','.','_',"-")
         f = "".join(c for c in line.replace("/", "_") if c.isalnum() or c in keepcharacters).rstrip()
 
-        browser.get_screenshot_as_file("/home/julian/Code/Python/Selenium_webArchiver/"+str(f)+".png")
+        if (not os.path.exists("./archived/")):
+            os.makedirs("./archived/")
+        browser.get_screenshot_as_file("./archived/"+str(f)+".png")
         print("done\n",flush=True)
         browser.set_window_size(width=1920, height=800)
         c += 1

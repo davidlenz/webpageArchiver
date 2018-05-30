@@ -33,7 +33,7 @@ for i,line in enumerate(content):
         print("calculating size...",flush=True,end="")
         h = browser.execute_script("return Math.max(document.body.scrollHeight, document.body.offsetHeight );")
         if (h == 0):
-            print("Error getting page length")
+            print("\nError getting page length\n")
             break
         browser.set_window_size(width=1920, height=h)
         print("done",flush=True)

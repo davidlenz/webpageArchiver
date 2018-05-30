@@ -53,5 +53,6 @@ for i,line in enumerate(content):
         print("("+str(i+1)+"/"+str(len(content))+") skipping\n")
 t2 = time.time()
 t = t2-t1
-print("saved",c,"items in",round(t,2),"seconds ("+str(round(t/c,2)),"seconds per item)")
+if (c > 0):
+    print("saved",c,"items in",round(t,2),"seconds ("+str(round(t/c,2)),"seconds per item)")
 browser.quit()

@@ -15,7 +15,7 @@ from selenium.webdriver.common.keys import Keys
 options = webdriver.ChromeOptions()
 options.add_argument('headless')
 options.add_argument('window-size=1920x800')
-browser = webdriver.Chrome(chrome_options=options)
+browser = webdriver.Chrome(options=options)
 
 # https://stackoverflow.com/a/3277516
 with open("list.txt") as f:

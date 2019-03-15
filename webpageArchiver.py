@@ -61,8 +61,11 @@ for i, line in enumerate(content):
             c += 1
         else:
             print("(" + str(i + 1) + "/" + str(len(content)) + ") skipping\n")
+
     except Exception as e:
         print(e)
+        browser.quit()
+        browser = webdriver.Chrome(options=options)
 t2 = time.time()
 t = t2 - t1
 if (c > 0):
